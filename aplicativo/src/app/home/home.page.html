@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Animais
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,8 +9,17 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let pessoa of lista" (click)='gotoDescricaoPage(pessoa)'>
+    <ion-thumbnail slot="start">
+    <img src="{{pessoa.link}}">
+    </ion-thumbnail>
     <ion-label>{{pessoa.nome}}</ion-label>
     </ion-item>
   </ion-list>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Feito por <br>Ruy de Ascenção Neto</ion-title>
+  </ion-toolbar>
+</ion-footer>
