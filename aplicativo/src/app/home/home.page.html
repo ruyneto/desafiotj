@@ -8,8 +8,8 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let name of lista" (click)='gotoDescricaoPage(name)'>
-    <ion-label>{{name}}</ion-label>
+    <ion-item *ngFor="let pessoa of lista" (click)='gotoDescricaoPage(pessoa)'>
+    <ion-label>{{pessoa.nome}}</ion-label>
     </ion-item>
   </ion-list>
 

@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>descricao</ion-title>
+    <ion-title>Descricao</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+  </ion-card>
 
+  <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Nome:{{pessoa.nome}}</ion-card-subtitle>
+    <ion-card-title>Idade:{{pessoa.idade}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Keep close to Nature's heart... and break clear away, once in awhile,
+    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+  </ion-card-content>
+</ion-card>
+<ion-button (click)="goBack()" >Default</ion-button>
 </ion-content>
